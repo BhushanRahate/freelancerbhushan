@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan | Freelance Web Developer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bhushan.</div>
+    
+            <!-- Desktop Nav -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    
+            <!-- Hire Me Button -->
+            <a href="#contact" class="btn hire-btn">Hire Me</a>
+    
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </nav>
+    
+        <!-- Mobile Nav Overlay -->
+        <div class="mobile-nav" id="mobileNav">
+            <span class="close-btn" id="closeBtn">×</span>
+            <ul>
+                <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+                <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+                <li><a href="#portfolio" onclick="closeMobileNav()">Portfolio</a></li>
+                <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+                <li><a href="#contact" class="btn hire-btn" onclick="closeMobileNav()">Hire Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Turning Ideas Into <span>Premium Websites</span></h1>
+            <p>I’m Bhushan, a passionate freelance developer dedicated to building responsive and modern websites that
+                impress and convert.</p>
+            <a href="#contact" class="btn">Let’s Work Together</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm <strong>Bhushan</strong>, a passionate web developer who loves creating
+                beautiful and functional websites. With a focus on modern design and
+                responsive layouts, I help clients build their online presence and
+                grow their business digitally.
+            </p>
+            <p>
+                My expertise includes front-end development (HTML, CSS, JavaScript, React)
+                and backend basics, ensuring your website is not only attractive but
+                also powerful.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="service-boxes">
+                <div class="service-box">
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive and SEO-friendly websites tailored for your business needs.</p>
+                </div>
+                <div class="service-box">
+                    <h3>UI/UX Design</h3>
+                    <p>Clean and interactive designs that make users fall in love with your product.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Content Strategy</h3>
+                    <p>Helping brands communicate their story with clarity and style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <p>E-commerce Website</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <p>Business Landing Page</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <p>Personal Portfolio</p>
+                </div>
+            </div>
+
+            <!-- Project Showcase -->
+
+    </section>
+
+    <section class="project">
+        <div class="container">
+            <h2>🍽️ Bhushan's Restaurant Website</h2>
+            <p>
+                A responsive restaurant website with table reservation system, menu ordering,
+                and gallery showcase. Built with HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="project-images">
+                <img src="images\Screenshot 2025-09-04 110057.png" alt="Restaurant Homepage">
+                <img src="images\Screenshot 2025-09-04 110128.png" alt="Restaurant Menu">
+                <img src="images\Screenshot 2025-09-04 110147.png" alt="Restaurant Gallery">
+                <img src="images\Screenshot 2025-09-04 110200.png" alt="Reservation Form">
+            </div>
+
+            <div class="project-links">
+                <a href="https://yourlivedemo.com" target="_blank" class="btn">🔗 Live Demo</a>
+                <a href="https://github.com/yourrepo" target="_blank" class="btn">📂 Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Bhushan.</div>
+            <p class="footer-text">© 2025 Bhushan | All Rights Reserved</p>
+            <p class="footer-email">
+                📩 <a href="mailto:freelancerbhushan001@gmail.com">freelancerbhushan001@gmail.com</a>
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // 🔑 apna public key dalna
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function () {
+                    alert('Message sent successfully!');
+                }, function (error) {
+                    alert('Failed to send message. Please try again.');
+                    console.log(error);
+                });
+        });
+    </script>
+</body>
+
+</html>
