@@ -494,6 +494,25 @@ footer {
     color: #00c6ff;
 }
 
+/* Smooth fade for buttons */
+.btn {
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Social icons bounce */
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* Service box tilt */
+.service-box:hover {
+  transform: translateY(-10px) rotate3d(1,1,0,5deg);
+}
+
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .social-links {
@@ -526,4 +545,5 @@ footer {
         padding: 10px 20px;
         font-size: 14px;
     }
+
 }
